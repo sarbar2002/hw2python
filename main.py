@@ -13,9 +13,9 @@ def getGradePoint(grade):
   elif grade == "B":
     return 3.0   
   elif grade == "B-":
-    return 2.6
+    return 2.67
   elif grade == "C+":
-    return 2.3         
+    return 2.33         
   elif grade == "C":
     return 2.0     
   elif grade == "D":
@@ -29,10 +29,10 @@ def run():
   print(f"Grade point for course 1 is: {getGradePoint(grade_input1)}")
   grade_input2 = (input("Enter your course 2 letter grade: ")) 
   credit_input2 = (input("Enter your course 2 credit: ")) 
-  print(f"Grade point for course 1 is: {getGradePoint(grade_input2)}")
+  print(f"Grade point for course 2 is: {getGradePoint(grade_input2)}")
   grade_input3 = (input("Enter your course 3 letter grade: "))  
   credit_input3 = (input("Enter your course 3 credit: "))
-  print(f"Grade point for course 1 is: {getGradePoint(grade_input3)}")
+  print(f"Grade point for course 3 is: {getGradePoint(grade_input3)}")
 
   GPA = (getGradePoint(grade_input1) * int(credit_input1) + getGradePoint(grade_input2) * int(credit_input2) + getGradePoint(grade_input3) * int(credit_input3)) / (int(credit_input1) + int(credit_input2) +  int(credit_input3))
 
